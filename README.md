@@ -1,17 +1,29 @@
-# Credit_Risk_Analysis
-The project involves analyzing credit card risk using machine learning techniques. The dataset used is the credit card credit dataset from LendingClub, a peer-to-peer lending services company.
+Credit Risk Prediction Project
+This project focuses on utilizing machine learning techniques to tackle the challenge of credit risk prediction. By employing data preparation, statistical reasoning, and machine learning algorithms, we aim to build models that can effectively identify risky credit card loans.
 
-The project has several deliverables:
+Project Overview
+The goal of this project is to develop and evaluate machine learning models for credit risk prediction.
+The credit card credit dataset from LendingClub, a peer-to-peer lending services company, will be used as the primary data source.
+We will address the inherent class imbalance in credit risk classification by employing resampling techniques provided by the imbalanced-learn and scikit-learn libraries.
+The following techniques will be applied to the dataset:
+Oversampling using the RandomOverSampler and SMOTE algorithms.
+Undersampling using the ClusterCentroids algorithm.
+Combinatorial resampling using the SMOTEENN algorithm, which combines over- and undersampling approaches.
+Two machine learning models that reduce bias, namely BalancedRandomForestClassifier and EasyEnsembleClassifier, will be compared and evaluated for their ability to predict credit risk.
+The performance of these models will be assessed using various metrics, such as accuracy scores, confusion matrices, and classification reports.
+Based on the evaluation results, a written recommendation will be provided regarding the suitability of the models for credit risk prediction.
+Project Structure
+The project consists of the following key deliverables:
 
-1. Deliverable 1: Use Resampling Models to Predict Credit Risk
-   - In this deliverable, you will use the oversampling RandomOverSampler and SMOTE algorithms, as well as the undersampling ClusterCentroids algorithm, to resample the dataset.
-   - The logistic regression classifier will be trained, and the balanced accuracy score, confusion matrix, and classification report will be calculated.
+Data Preparation: Perform data preprocessing and prepare the credit card credit dataset for model training and evaluation.
 
-2. Deliverable 2: Use the SMOTEENN Algorithm to Predict Credit Risk
-   - This deliverable focuses on using the SMOTEENN algorithm, which combines over- and undersampling techniques, to resample the dataset.
-   - The logistic regression classifier will be trained, and the accuracy score, confusion matrix, and classification report will be generated.
+Resampling Techniques:
 
-3. Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk
-   - In this deliverable, you will train and compare two ensemble classifiers, BalancedRandomForestClassifier and EasyEnsembleClassifier, to predict credit risk.
-   - Resampling techniques will be applied, and the ensemble classifiers will be trained. The balanced accuracy score, confusion matrix, and classification report will be generated.
+Apply oversampling techniques using RandomOverSampler and SMOTE algorithms.
+Apply undersampling using the ClusterCentroids algorithm.
+Implement the SMOTEENN algorithm for a combinatorial approach to resampling.
+Model Training and Evaluation:
 
+Train and evaluate the BalancedRandomForestClassifier and EasyEnsembleClassifier models.
+Calculate accuracy scores, generate confusion matrices, and create classification reports for each model.
+Recommendation and Conclusion: Based on the performance evaluation, provide a written recommendation on whether the models should be used for credit risk prediction. Conclude the project by summarizing the key findings and potential areas for future improvement.
